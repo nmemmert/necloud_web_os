@@ -262,7 +262,6 @@ export function useApplicationManager() {
   })
 
   return {
-    apps,
     defineApp,
     isAppDefined,
     getAppById,
@@ -271,6 +270,7 @@ export function useApplicationManager() {
     execAppCommand,
     closeApp,
     getWindowOpenedId,
+    apps,
     appsEntries,
     appsRunning,
     windowsOpened,
