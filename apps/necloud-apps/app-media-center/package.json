@@ -1,0 +1,17 @@
+{
+  "name": "@necloud/app-media-center",
+  "version": "1.0.0",
+  "description": "Media center with video and audio playback for necloudOS",
+  "type": "module",
+  "main": "module.ts",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build"
+  },
+  "dependencies": {
+    "@owdproject/core": "workspace:*"
+  },
+  "keywords": ["owd-apps", "media", "video", "audio"],
+  "author": "necloudOS",
+  "license": "MIT"
+}

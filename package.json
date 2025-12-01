@@ -20,7 +20,6 @@
     "generate": "nx run desktop:generate"
   },
   "devDependencies": {
-    "@owdproject/nx": "^0.0.3",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.29.0",
     "@nuxt/devtools": "2.5.0",
@@ -37,6 +36,7 @@
     "@nx/vite": "21.2.1",
     "@nx/web": "21.2.1",
     "@nx/workspace": "21.2.1",
+    "@owdproject/nx": "^0.0.3",
     "@swc-node/register": "~1.10.10",
     "@swc/cli": "~0.7.7",
     "@swc/core": "~1.12.4",
@@ -67,5 +67,8 @@
   "resolutions": {
     "vite": "^6.3.2"
   },
-  "packageManager": "pnpm@10.12.1"
+  "packageManager": "pnpm@10.12.1",
+  "dependencies": {
+    "@owdproject/theme-gnome": "^0.1.0"
+  }
 }

@@ -22,4 +22,21 @@ export default defineNuxtConfig({
   devtools: {
     enabled: false,
   },
+
+  // global desktop styles override for readability
+  // use relative path because workspaceDir alters @ alias scope
+  css: ['./assets/css/global.css'],
+
+  // Ensure a single Vue/reactivity instance across theme and apps
+  vite: {
+    resolve: {
+      dedupe: [
+        'vue',
+        '@vue/shared',
+        '@vue/reactivity',
+        '@vue/runtime-core',
+        '@vue/runtime-dom',
+      ],
+    },
+  },
 })

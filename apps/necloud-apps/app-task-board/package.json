@@ -1,0 +1,18 @@
+{
+  "name": "@necloud/app-task-board",
+  "version": "1.0.0",
+  "description": "Kanban-style task board for necloudOS",
+  "type": "module",
+  "main": "module.ts",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build"
+  },
+  "dependencies": {
+    "@owdproject/core": "workspace:*"
+  },
+  "keywords": ["owd-apps", "tasks", "kanban", "productivity"],
+  "author": "necloudOS",
+  "license": "MIT"
+}
+

@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "cd desktop && pnpm dev",
+    "build": "cd desktop && pnpm build",
+    "preview": "cd desktop && pnpm preview",
+    "install-all": "pnpm install",
+    "clean": "rm -rf node_modules **/node_modules",
+    "postinstall": "echo 'Dependencies installed! Run: pnpm dev'"
+  }
+}

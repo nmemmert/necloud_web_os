@@ -1,6 +1,7 @@
 packages:
   - 'desktop'
   - 'apps/*'
+  - 'apps/necloud-apps/*'
   - 'packages/*'
   - 'themes/*'
   - 'plugins/*'

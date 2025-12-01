@@ -6,14 +6,33 @@
   },
   "scripts": {
     "build": "nuxt generate",
-    "dev": "nuxt dev --host",
+    "dev": "nuxt dev",
     "generate": "nuxt generate --dev",
     "postinstall": "nuxt prepare",
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@owdproject/core": "^3.1.4",
+    "@necloud/app-code-editor": "workspace:*",
+    "@necloud/app-media-center": "workspace:*",
+    "@necloud/app-notes": "workspace:*",
+    "@necloud/app-seafile": "workspace:*",
+    "@necloud/app-task-board": "workspace:*",
+    "@necloud/app-terminal": "workspace:*",
+    "@necloud/app-vaultwarden": "workspace:*",
+    "@necloud/app-settings": "workspace:*",
+    "@necloud/app-explorer": "workspace:*",
     "@owdproject/app-about": "^0.1.3",
-    "@owdproject/theme-win95": "0.1.1"
+    "@owdproject/app-atproto": "^0.0.3",
+    "@owdproject/app-classic-audioplayer": "^0.0.4",
+    "@owdproject/app-classic-videoplayer": "^0.0.4",
+    "@owdproject/app-debug": "^0.1.0",
+    "@owdproject/app-soundcloud": "^0.0.3",
+    "@owdproject/app-terminal": "^0.1.3",
+    "@owdproject/app-todo": "^0.1.3",
+    "@owdproject/app-wasmboy": "^0.1.0",
+    "@owdproject/app-youtube": "^0.0.4",
+    "@owdproject/core": "^3.1.4",
+    "@owdproject/module-fs": "^0.0.3",
+    "@owdproject/theme-gnome": "^0.1.0"
   }
 }

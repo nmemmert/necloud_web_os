@@ -1,0 +1,18 @@
+{
+  "name": "@necloud/app-vaultwarden",
+  "version": "1.0.0",
+  "description": "Vaultwarden password manager integration for necloudOS",
+  "type": "module",
+  "main": "module.ts",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build"
+  },
+  "dependencies": {
+    "@owdproject/core": "workspace:*"
+  },
+  "keywords": ["owd-apps", "vaultwarden", "password-manager"],
+  "author": "necloudOS",
+  "license": "MIT"
+}
+

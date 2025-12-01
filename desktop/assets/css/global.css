@@ -1,0 +1,72 @@
+/* Global readability overrides with accessible contrast */
+:root {
+  --owd-bg: #111315; /* dark desktop backdrop */
+  --owd-surface: #ffffff; /* window surface */
+  --owd-surface-alt: #f6f7f9; /* panels */
+  --owd-border: #d0d7de;
+  --owd-text: #1b1f23;
+  --owd-text-inverse: #f5f7fa;
+  --owd-text-muted: #445060;
+  --owd-text-disabled: #7e8893;
+  --owd-accent: #2563eb;
+  --owd-accent-hover: #1d4ed8;
+  --owd-focus-ring: #3b82f6;
+  --owd-radius: 8px;
+}
+
+html, body {
+  background-color: var(--owd-bg);
+  color: var(--owd-text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Desktop background container (if theme does not set) */
+.owd-desktop { background: var(--owd-bg); color: var(--owd-text-inverse); }
+
+/* Window shells */
+.owd-window { color: var(--owd-text); }
+.owd-window__content { background: var(--owd-surface); color: var(--owd-text); }
+
+/* Generic panels */
+.panel { background: var(--owd-surface-alt); border: 1px solid var(--owd-border); border-radius: var(--owd-radius); }
+
+/* Settings navigation improvements */
+.settings-nav { background: var(--owd-surface); color: var(--owd-text); }
+.settings-nav .section { background: var(--owd-surface-alt); color: var(--owd-text); font-weight: 600; }
+.settings-nav .section.disabled { opacity: 1; color: var(--owd-text-disabled); font-weight: 500; }
+
+/* Buttons */
+button.btn, .theme-btn { background: var(--owd-accent); color: #fff; border: 1px solid var(--owd-accent); }
+button.btn:hover, .theme-btn:hover { background: var(--owd-accent-hover); border-color: var(--owd-accent-hover); }
+button.theme-btn.active { background: var(--owd-accent-hover); box-shadow: 0 0 0 2px var(--owd-focus-ring)/30%; }
+
+/* Inputs */
+input[type="color"], input[type="text"], input[type="search"], input[type="password"], textarea {
+  border: 1px solid var(--owd-border);
+  background: #fff;
+  color: var(--owd-text);
+  border-radius: 6px;
+  padding: .45rem .6rem;
+  font-size: .85rem;
+}
+input:focus, textarea:focus { outline: 2px solid var(--owd-focus-ring); outline-offset: 2px; }
+
+/* Muted text */
+.text-muted { color: var(--owd-text-muted); }
+
+/* Links */
+a { color: var(--owd-accent); }
+a:hover { color: var(--owd-accent-hover); }
+
+/* Ensure inherited color but preserve design tokens */
+.owd-window * { color: inherit; }
+
+/* High contrast scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--owd-bg); }
+::-webkit-scrollbar-thumb { background: #2b3036; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #3b4249; }
+
+/* Utility: force readable text inside unknown theme areas */
+.force-readable { color: var(--owd-text) !important; }
